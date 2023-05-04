@@ -1,0 +1,39 @@
+import java.util.Scanner;
+class Complex{
+    double r,i,real=0,ima=0;
+    Scanner s=new Scanner(System.in);
+
+    void setdata()
+    { System.out.println("Enter real part ");
+            r=s.nextDouble();
+        System.out.println("Enter imaginery part ");
+        i=s.nextDouble();
+    }
+    void Add()
+    {
+        real=real+r;
+        ima=ima+i;
+
+    }
+    void Out()
+    {
+        System.out.println(real+"+"+ima+ "i");
+    }
+
+}
+class Main{
+    public static void main(String[] args)
+    {   Complex n1=new Complex();
+
+        n1.setdata();
+        n1.Add();
+        n1.setdata();
+        n1.Add();
+        n1.Out();
+
+
+
+
+
+    }
+}
